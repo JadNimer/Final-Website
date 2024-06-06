@@ -38,50 +38,50 @@
       </head>
         
       <body>
-               <div>
-                <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" class="mage">
-                    <h1>Spin Wheel</h1>
-                    </div>
-                    <ul>
-                      <li><a href="fpage.html">Home</a></li>
-                      <li><a href="downlaod.html">Downloads</a></li>
-                      <li><a href="wheel.html">Games Randomizer</a></li>
-                   
-                    </ul>
-    
-                    <h1 class="head">Unsure about which game to play, try this spin wheel to decide your next download:</h1>
-               </div>
 
-
-                <div class="container">
+        <div style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" class="mage">
+          <h1>Downloads</h1>
+          </div>
+          <ul>
+            <li><a href="fpage.html">Home</a></li>
+            <li><a href="downlaod.html">Downloads</a></li>
+            <li><a href="wheel.html">Games Randomizer</a></li>
+           </ul>
+           <br>
+           <br>
+           <h1 style="text-align: center;"> Unsure of what game to download, try this:</h1>
+     <header>
+      
+     </header>
+    <main>
+        <div style="width:100%">
+        <div class="container" >
                     <div class="spinBtn"> Spin </div>
                     <div class="wheel">
                         <div class="number" style="--i:1;--clr:#db7093;"><span>Subway Surfers</span></div>
                         <div class="number" style="--i:2;--clr:#ff2727;"><span>Clash Royale</span></div>
                         <div class="number" style="--i:3;--clr:#00ccff;"><span>Candy Crush</span></div>
                         <div class="number" style="--i:4;--clr:#57ff51;"><span>Flappy Bird</span></div>
-                        <div class="number" style="--i:5;--clr:#f6ff53;"><span>Temple Run</span></div>
+                        <div class="number" style="--i:5;--clr:#abb403;"><span>Temple Run</span></div>
                         <div class="number" style="--i:6;--clr:#ffb465;"><span>Angry Birds</span></div>
                         <div class="number" style="--i:7;--clr:#ff5bf4;"><span>Jetpack Joyride</span></div>
                         <div class="number" style="--i:8;--clr:hsl(321, 60%, 65%);"><span>Cut the Rope</span></div>
                         </div>
-                </div>
+                </div></div><br><br>
+
+                
                 <script>
                     let wheel = document.querySelector('.wheel');
-                    let spintBtn = document.querySelector('.spinBtn');
+                    let spinBtn = document.querySelector('.spinBtn');
                     let value = Math.ceil(Math.random() * 3600);
                     
                     spinBtn.onclick = function(){
                         wheel.style.transform = "rotate(" + value + "deg)"
-                    };
-                    value += Math.ceil(Math.random() * 3600);
+                        value += Math.ceil(Math.random() * 3600);
+                      };
                 </script>
     
-               
-               
-    
-                
-
+  </main>
 
               
 
